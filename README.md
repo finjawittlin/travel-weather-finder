@@ -6,7 +6,7 @@ Travel Weather Finder ist eine responsive Web-Applikation, die Nutzern passende 
 
 Anstatt selbst nach einem Reiseziel zu suchen, können Nutzer eine Wetterpräferenz wie **Sunny**, **Tropical**, **Rainy**, **Cloudy** oder **Cold** auswählen. Die Anwendung ruft anschliessend aktuelle Wetterdaten über die Open-Meteo API ab und schlägt eine passende Destination vor.
 
-Das Projekt wurde im Rahmen des Moduls **Interactive Media 2 (IM2)** an der FHNW entwickelt.
+Das Projekt wurde im Rahmen des Moduls **Interaktive Medien II)** an der FHGR entwickelt.
 
 ---
 
@@ -80,6 +80,6 @@ Layout, Typografie und Inhalte passen sich automatisch an die jeweilige Bildschi
 
 Finja Wittlin 
 
-FHNW – Multimedia Production
+FHGR – Multimedia Production
 
 2026
