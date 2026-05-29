@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Travel Weather Finder</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+</head>
+
+<body>
+
+<main class="app">
+
+  <!-- HOME -->
+  <section
+    id="homeScreen"
+    class="screen active home-screen"
+  >
+
+    <h1>
+      Looking for a travel<br>
+      destination?
+    </h1>
+
+    <p>
+      Find a random destination based on your weather preference
+    </p>
+
+    <div class="search-box">
+
+      <div class="custom-dropdown">
+
+        <button
+          id="dropdownToggle"
+          class="dropdown-toggle"
+        >
+          <span id="selectedWeatherText">
+            Select preferred weather
+          </span>
+
+          <span class="chevron">
+            ⌃
+          </span>
+        </button>
+
+        <div
+          id="dropdownMenu"
+          class="dropdown-menu"
+        >
+
+          <button data-value="sunny" class="weather-option">
+            Sunny
+          </button>
+
+          <button data-value="tropical" class="weather-option">
+            Tropical
+          </button>
+
+          <button data-value="rainy" class="weather-option">
+            Rainy
+          </button>
+
+          <button data-value="cold" class="weather-option">
+            Cold
+          </button>
+
+          <button data-value="cloudy" class="weather-option">
+            Cloudy
+          </button>
+
+        </div>
+
+      </div>
+
+      <button id="findBtn">
+        Find a destination
+      </button>
+
+    </div>
+
+    <p id="weatherError" class="error-message">
+      Please choose a weather first.
+    </p>
+
+  </section>
+
+
+  <!-- LOADING -->
+  <section
+    id="loadingScreen"
+    class="screen loading-screen"
+  >
+    <div id="lottie-loader"></div>
+
+    <p>
+      finding a destination...
+    </p>
+  </section>
+
+
+  <!-- RESULT -->
+  <section
+    id="resultScreen"
+    class="screen result-screen"
+  >
+
+    <img
+      id="destinationImage"
+      src=""
+      alt="Destination image"
+    >
+
+    <div class="overlay">
+
+      <h2 id="destinationName">
+        AITUTAKI
+      </h2>
+
+      <button id="exploreBtn">
+        Explore
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- DETAIL -->
+  <section
+    id="detailScreen"
+    class="screen detail-screen"
+  >
+
+    <h2 id="detailName">
+      AITUTAKI
+    </h2>
+
+    <div class="detail-grid">
+
+      <div class="card about-card">
+
+        <h3 id="aboutTitle">
+          About Aitutaki
+        </h3>
+
+        <p id="detailDescription"></p>
+
+      </div>
+
+      <img
+        id="detailImage"
+        class="detail-img"
+        src=""
+        alt="Destination"
+      >
+
+      <div class="card weather-card">
+
+        <h3>
+          Weather today
+        </h3>
+
+        <div class="weather-content">
+
+          <img
+            id="weatherIcon"
+            class="weather-icon"
+            src=""
+            alt="Weather icon"
+          >
+
+          <strong id="temperature">
+            27°C
+          </strong>
+
+        </div>
+
+      </div>
+
+      <div class="card facts-card">
+
+        <h3>
+          Fun Facts
+        </h3>
+
+        <ul id="factsList"></ul>
+
+        <div
+          id="quickFacts"
+          class="quick-facts"
+        ></div>
+
+      </div>
+
+    </div>
+
+    <button
+      id="newBtn"
+      class="small-btn"
+    >
+      New destination
+    </button>
+
+  </section>
+
+
+  <!-- NO MATCH -->
+  <section
+    id="noMatchScreen"
+    class="screen no-match-screen"
+  >
+    <h2>
+      No perfect match today
+    </h2>
+
+    <p>
+      The weather gods suggest choosing another travel vibe.
+    </p>
+
+    <button id="backBtn">
+      Choose another weather
+    </button>
+  </section>
+
+</main>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
